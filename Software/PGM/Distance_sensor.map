@@ -3707,7 +3707,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1e38
+.text           0x00000000     0x1e3a
  *(.vectors)
  .vectors       0x00000000       0x68 E:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega168/avr5/crtatmega168.o
                 0x00000000                __vector_default
@@ -3819,238 +3819,241 @@ END GROUP
  .text.set_green
                 0x0000099c       0x2c Distance_sensor.o
                 0x0000099c                set_green
+ .text.isDistanceCorrect
+                0x000009c8       0x24 Distance_sensor.o
+                0x000009c8                isDistanceCorrect
  .text.ShowDistanceOnLed
-                0x000009c8       0x52 Distance_sensor.o
-                0x000009c8                ShowDistanceOnLed
+                0x000009ec       0x2c Distance_sensor.o
+                0x000009ec                ShowDistanceOnLed
  .text.startup.main
-                0x00000a1a       0x4e Distance_sensor.o
-                0x00000a1a                main
+                0x00000a18       0x52 Distance_sensor.o
+                0x00000a18                main
  .text.__vector_1
-                0x00000a68       0x6e Distance_sensor.o
-                0x00000a68                __vector_1
+                0x00000a6a       0x6e Distance_sensor.o
+                0x00000a6a                __vector_1
  .text.u8g_IsBBXIntersection
-                0x00000ad6       0x44 u8g_clip.o
-                0x00000ad6                u8g_IsBBXIntersection
+                0x00000ad8       0x44 u8g_clip.o
+                0x00000ad8                u8g_IsBBXIntersection
  .text.u8g_InitCom
-                0x00000b1a       0x12 u8g_com_api.o
-                0x00000b1a                u8g_InitCom
+                0x00000b1c       0x12 u8g_com_api.o
+                0x00000b1c                u8g_InitCom
  .text.u8g_SetChipSelect
-                0x00000b2c       0x12 u8g_com_api.o
-                0x00000b2c                u8g_SetChipSelect
+                0x00000b2e       0x12 u8g_com_api.o
+                0x00000b2e                u8g_SetChipSelect
  .text.u8g_SetResetLow
-                0x00000b3e       0x14 u8g_com_api.o
-                0x00000b3e                u8g_SetResetLow
+                0x00000b40       0x14 u8g_com_api.o
+                0x00000b40                u8g_SetResetLow
  .text.u8g_SetResetHigh
-                0x00000b52       0x14 u8g_com_api.o
-                0x00000b52                u8g_SetResetHigh
+                0x00000b54       0x14 u8g_com_api.o
+                0x00000b54                u8g_SetResetHigh
  .text.u8g_SetAddress
-                0x00000b66       0x12 u8g_com_api.o
-                0x00000b66                u8g_SetAddress
+                0x00000b68       0x12 u8g_com_api.o
+                0x00000b68                u8g_SetAddress
  .text.u8g_WriteByte
-                0x00000b78       0x12 u8g_com_api.o
-                0x00000b78                u8g_WriteByte
+                0x00000b7a       0x12 u8g_com_api.o
+                0x00000b7a                u8g_WriteByte
  .text.u8g_WriteSequence
-                0x00000b8a        0xe u8g_com_api.o
-                0x00000b8a                u8g_WriteSequence
+                0x00000b8c        0xe u8g_com_api.o
+                0x00000b8c                u8g_WriteSequence
  .text.u8g_WriteEscSeqP
-                0x00000b98       0xc0 u8g_com_api.o
-                0x00000b98                u8g_WriteEscSeqP
+                0x00000b9a       0xc0 u8g_com_api.o
+                0x00000b9a                u8g_WriteEscSeqP
  .text.u8g_com_arduino_ssd_start_sequence
-                0x00000c58       0x34 u8g_com_arduino_ssd_i2c.o
-                0x00000c58                u8g_com_arduino_ssd_start_sequence
+                0x00000c5a       0x34 u8g_com_arduino_ssd_i2c.o
+                0x00000c5a                u8g_com_arduino_ssd_start_sequence
  .text.u8g_com_arduino_ssd_i2c_fn
-                0x00000c8c       0xb4 u8g_com_arduino_ssd_i2c.o
-                0x00000c8c                u8g_com_arduino_ssd_i2c_fn
+                0x00000c8e       0xb4 u8g_com_arduino_ssd_i2c.o
+                0x00000c8e                u8g_com_arduino_ssd_i2c_fn
  .text.u8g_i2c_set_error
-                0x00000d40       0x12 u8g_com_i2c.o
+                0x00000d42       0x12 u8g_com_i2c.o
  .text.u8g_i2c_clear_error
-                0x00000d52        0xa u8g_com_i2c.o
-                0x00000d52                u8g_i2c_clear_error
+                0x00000d54        0xa u8g_com_i2c.o
+                0x00000d54                u8g_i2c_clear_error
  .text.u8g_i2c_init
-                0x00000d5c       0x1a u8g_com_i2c.o
-                0x00000d5c                u8g_i2c_init
+                0x00000d5e       0x1a u8g_com_i2c.o
+                0x00000d5e                u8g_i2c_init
  .text.u8g_i2c_wait
-                0x00000d76       0x52 u8g_com_i2c.o
-                0x00000d76                u8g_i2c_wait
+                0x00000d78       0x52 u8g_com_i2c.o
+                0x00000d78                u8g_i2c_wait
  .text.u8g_i2c_start
-                0x00000dc8       0x6e u8g_com_i2c.o
-                0x00000dc8                u8g_i2c_start
+                0x00000dca       0x6e u8g_com_i2c.o
+                0x00000dca                u8g_i2c_start
  .text.u8g_i2c_send_byte
-                0x00000e36       0x42 u8g_com_i2c.o
-                0x00000e36                u8g_i2c_send_byte
+                0x00000e38       0x42 u8g_com_i2c.o
+                0x00000e38                u8g_i2c_send_byte
  .text.u8g_i2c_stop
-                0x00000e78        0xe u8g_com_i2c.o
-                0x00000e78                u8g_i2c_stop
+                0x00000e7a        0xe u8g_com_i2c.o
+                0x00000e7a                u8g_i2c_stop
  .text.u8g_Delay
-                0x00000e86       0x14 u8g_delay.o
-                0x00000e86                u8g_Delay
+                0x00000e88       0x14 u8g_delay.o
+                0x00000e88                u8g_Delay
  .text.u8g_dev_sh1106_128x64_fn
-                0x00000e9a       0xd4 u8g_dev_ssd1306_128x64.o
-                0x00000e9a                u8g_dev_sh1106_128x64_fn
+                0x00000e9c       0xd4 u8g_dev_ssd1306_128x64.o
+                0x00000e9c                u8g_dev_sh1106_128x64_fn
  .text.u8g_font_get_word
-                0x00000f6e       0x18 u8g_font.o
+                0x00000f70       0x18 u8g_font.o
  .text.u8g_font_GetFormat
-                0x00000f86        0x6 u8g_font.o
+                0x00000f88        0x6 u8g_font.o
  .text.u8g_font_GetFontGlyphStructureSize
-                0x00000f8c       0x14 u8g_font.o
+                0x00000f8e       0x14 u8g_font.o
  .text.u8g_font_calc_vref_font
-                0x00000fa0        0x4 u8g_font.o
-                0x00000fa0                u8g_font_calc_vref_font
+                0x00000fa2        0x4 u8g_font.o
+                0x00000fa2                u8g_font_calc_vref_font
  .text.u8g_font_GetEncoding65Pos
-                0x00000fa4        0x6 u8g_font.o
-                0x00000fa4                u8g_font_GetEncoding65Pos
+                0x00000fa6        0x6 u8g_font.o
+                0x00000fa6                u8g_font_GetEncoding65Pos
  .text.u8g_font_GetEncoding97Pos
-                0x00000faa        0x6 u8g_font.o
-                0x00000faa                u8g_font_GetEncoding97Pos
+                0x00000fac        0x6 u8g_font.o
+                0x00000fac                u8g_font_GetEncoding97Pos
  .text.u8g_font_GetFontStartEncoding
-                0x00000fb0        0x8 u8g_font.o
-                0x00000fb0                u8g_font_GetFontStartEncoding
+                0x00000fb2        0x8 u8g_font.o
+                0x00000fb2                u8g_font_GetFontStartEncoding
  .text.u8g_font_GetFontEndEncoding
-                0x00000fb8        0x8 u8g_font.o
-                0x00000fb8                u8g_font_GetFontEndEncoding
+                0x00000fba        0x8 u8g_font.o
+                0x00000fba                u8g_font_GetFontEndEncoding
  .text.u8g_GetGlyph
-                0x00000fc0      0x1ac u8g_font.o
-                0x00000fc0                u8g_GetGlyph
+                0x00000fc2      0x1ac u8g_font.o
+                0x00000fc2                u8g_GetGlyph
  .text.u8g_draw_glyph
-                0x0000116c       0xc0 u8g_font.o
-                0x0000116c                u8g_draw_glyph
+                0x0000116e       0xc0 u8g_font.o
+                0x0000116e                u8g_draw_glyph
  .text.u8g_DrawStr
-                0x0000122c       0x58 u8g_font.o
-                0x0000122c                u8g_DrawStr
+                0x0000122e       0x58 u8g_font.o
+                0x0000122e                u8g_DrawStr
  .text.u8g_UpdateRefHeight
-                0x00001284       0x92 u8g_font.o
-                0x00001284                u8g_UpdateRefHeight
+                0x00001286       0x92 u8g_font.o
+                0x00001286                u8g_UpdateRefHeight
  .text.u8g_SetFontPosBaseline
-                0x00001316        0xc u8g_font.o
-                0x00001316                u8g_SetFontPosBaseline
+                0x00001318        0xc u8g_font.o
+                0x00001318                u8g_SetFontPosBaseline
  .text.u8g_SetFont
-                0x00001322       0x28 u8g_font.o
-                0x00001322                u8g_SetFont
+                0x00001324       0x28 u8g_font.o
+                0x00001324                u8g_SetFont
  .text.u8g_init_data
-                0x0000134a       0x56 u8g_ll_api.o
+                0x0000134c       0x56 u8g_ll_api.o
  .text.u8g_call_dev_fn
-                0x000013a0        0x8 u8g_ll_api.o
-                0x000013a0                u8g_call_dev_fn
+                0x000013a2        0x8 u8g_ll_api.o
+                0x000013a2                u8g_call_dev_fn
  .text.u8g_InitLL
-                0x000013a8       0x40 u8g_ll_api.o
-                0x000013a8                u8g_InitLL
+                0x000013aa       0x40 u8g_ll_api.o
+                0x000013aa                u8g_InitLL
  .text.u8g_FirstPageLL
-                0x000013e8       0x4a u8g_ll_api.o
-                0x000013e8                u8g_FirstPageLL
+                0x000013ea       0x4a u8g_ll_api.o
+                0x000013ea                u8g_FirstPageLL
  .text.u8g_NextPageLL
-                0x00001432       0x58 u8g_ll_api.o
-                0x00001432                u8g_NextPageLL
+                0x00001434       0x58 u8g_ll_api.o
+                0x00001434                u8g_NextPageLL
  .text.u8g_GetWidthLL
-                0x0000148a       0x20 u8g_ll_api.o
-                0x0000148a                u8g_GetWidthLL
+                0x0000148c       0x20 u8g_ll_api.o
+                0x0000148c                u8g_GetWidthLL
  .text.u8g_GetHeightLL
-                0x000014aa       0x20 u8g_ll_api.o
-                0x000014aa                u8g_GetHeightLL
+                0x000014ac       0x20 u8g_ll_api.o
+                0x000014ac                u8g_GetHeightLL
  .text.u8g_GetModeLL
-                0x000014ca        0xa u8g_ll_api.o
-                0x000014ca                u8g_GetModeLL
+                0x000014cc        0xa u8g_ll_api.o
+                0x000014cc                u8g_GetModeLL
  .text.u8g_UpdateDimension
-                0x000014d4       0x3e u8g_ll_api.o
-                0x000014d4                u8g_UpdateDimension
+                0x000014d6       0x3e u8g_ll_api.o
+                0x000014d6                u8g_UpdateDimension
  .text.u8g_Begin
-                0x00001512       0x20 u8g_ll_api.o
-                0x00001512                u8g_Begin
+                0x00001514       0x20 u8g_ll_api.o
+                0x00001514                u8g_Begin
  .text.u8g_InitI2C
-                0x00001532       0x2a u8g_ll_api.o
-                0x00001532                u8g_InitI2C
+                0x00001534       0x2a u8g_ll_api.o
+                0x00001534                u8g_InitI2C
  .text.u8g_FirstPage
-                0x0000155c        0xa u8g_ll_api.o
-                0x0000155c                u8g_FirstPage
+                0x0000155e        0xa u8g_ll_api.o
+                0x0000155e                u8g_FirstPage
  .text.u8g_NextPage
-                0x00001566       0x1e u8g_ll_api.o
-                0x00001566                u8g_NextPage
+                0x00001568       0x1e u8g_ll_api.o
+                0x00001568                u8g_NextPage
  .text.u8g_Draw8Pixel
-                0x00001584       0x22 u8g_ll_api.o
-                0x00001584                u8g_Draw8Pixel
+                0x00001586       0x22 u8g_ll_api.o
+                0x00001586                u8g_Draw8Pixel
  .text.u8g_page_First
-                0x000015a6        0xe u8g_page.o
-                0x000015a6                u8g_page_First
+                0x000015a8        0xe u8g_page.o
+                0x000015a8                u8g_page_First
  .text.u8g_page_Next
-                0x000015b4       0x2c u8g_page.o
-                0x000015b4                u8g_page_Next
+                0x000015b6       0x2c u8g_page.o
+                0x000015b6                u8g_page_Next
  .text.u8g_pb_Clear
-                0x000015e0       0x20 u8g_pb.o
-                0x000015e0                u8g_pb_Clear
+                0x000015e2       0x20 u8g_pb.o
+                0x000015e2                u8g_pb_Clear
  .text.u8g_pb_IsYIntersection
-                0x00001600       0x2e u8g_pb.o
-                0x00001600                u8g_pb_IsYIntersection
+                0x00001602       0x2e u8g_pb.o
+                0x00001602                u8g_pb_IsYIntersection
  .text.u8g_pb_GetPageBox
-                0x0000162e       0x20 u8g_pb.o
-                0x0000162e                u8g_pb_GetPageBox
+                0x00001630       0x20 u8g_pb.o
+                0x00001630                u8g_pb_GetPageBox
  .text.u8g_pb_Is8PixelVisible
-                0x0000164e       0x20 u8g_pb.o
-                0x0000164e                u8g_pb_Is8PixelVisible
+                0x00001650       0x20 u8g_pb.o
+                0x00001650                u8g_pb_Is8PixelVisible
  .text.u8g_pb_WriteBuffer
-                0x0000166e       0x10 u8g_pb.o
-                0x0000166e                u8g_pb_WriteBuffer
+                0x00001670       0x10 u8g_pb.o
+                0x00001670                u8g_pb_WriteBuffer
  .text.u8g_pb8v1_set_pixel
-                0x0000167e       0x34 u8g_pb8v1.o
-                0x0000167e                u8g_pb8v1_set_pixel
+                0x00001680       0x34 u8g_pb8v1.o
+                0x00001680                u8g_pb8v1_set_pixel
  .text.u8g_pb8v1_SetPixel
-                0x000016b2       0x2c u8g_pb8v1.o
-                0x000016b2                u8g_pb8v1_SetPixel
+                0x000016b4       0x2c u8g_pb8v1.o
+                0x000016b4                u8g_pb8v1_SetPixel
  .text.u8g_pb8v1_Set8PixelOpt2
-                0x000016de       0x68 u8g_pb8v1.o
-                0x000016de                u8g_pb8v1_Set8PixelOpt2
+                0x000016e0       0x68 u8g_pb8v1.o
+                0x000016e0                u8g_pb8v1_Set8PixelOpt2
  .text.u8g_dev_pb8v1_base_fn
-                0x00001746       0x8e u8g_pb8v1.o
-                0x00001746                u8g_dev_pb8v1_base_fn
+                0x00001748       0x8e u8g_pb8v1.o
+                0x00001748                u8g_dev_pb8v1_base_fn
  .text.u8g_state_dummy_cb
-                0x000017d4        0x2 u8g_state.o
-                0x000017d4                u8g_state_dummy_cb
+                0x000017d6        0x2 u8g_state.o
+                0x000017d6                u8g_state_dummy_cb
  .text.ws2812_init
-                0x000017d6        0x4 ws2812.o
-                0x000017d6                ws2812_init
+                0x000017d8        0x4 ws2812.o
+                0x000017d8                ws2812_init
  .text.ws2812_set_red
-                0x000017da       0x14 ws2812.o
-                0x000017da                ws2812_set_red
+                0x000017dc       0x14 ws2812.o
+                0x000017dc                ws2812_set_red
  .text.ws2812_set_green
-                0x000017ee       0x14 ws2812.o
-                0x000017ee                ws2812_set_green
+                0x000017f0       0x14 ws2812.o
+                0x000017f0                ws2812_set_green
  .text.libgcc.div
-                0x00001802       0x28 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x00001802                __udivmodhi4
+                0x00001804       0x28 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00001804                __udivmodhi4
  .text.libgcc.div
-                0x0000182a       0x28 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x0000182a                _div
-                0x0000182a                __divmodhi4
+                0x0000182c       0x28 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x0000182c                _div
+                0x0000182c                __divmodhi4
  .text.avr-libc
-                0x00001852        0xe e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
-                0x00001852                strcpy
+                0x00001854        0xe e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                0x00001854                strcpy
  .text.avr-libc
-                0x00001860       0x44 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                0x00001860                sprintf
+                0x00001862       0x44 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x00001862                sprintf
  .text.avr-libc
-                0x000018a4      0x3c2 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x000018a4                vfprintf
+                0x000018a6      0x3c2 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x000018a6                vfprintf
  .text.avr-libc
-                0x00001c66       0x16 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x00001c66                strnlen_P
+                0x00001c68       0x16 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00001c68                strnlen_P
  .text.avr-libc
-                0x00001c7c       0x16 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x00001c7c                strnlen
+                0x00001c7e       0x16 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x00001c7e                strnlen
  .text.avr-libc
-                0x00001c92       0x78 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x00001c92                fputc
+                0x00001c94       0x78 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00001c94                fputc
  .text.avr-libc
-                0x00001d0a       0xbc e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x00001d0a                __ultoa_invert
+                0x00001d0c       0xbc e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00001d0c                __ultoa_invert
  .text.libgcc.prologue
-                0x00001dc6       0x38 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                0x00001dc6                __prologue_saves__
+                0x00001dc8       0x38 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00001dc8                __prologue_saves__
  .text.libgcc.prologue
-                0x00001dfe       0x36 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                0x00001dfe                __epilogue_restores__
-                0x00001e34                . = ALIGN (0x2)
+                0x00001e00       0x36 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x00001e00                __epilogue_restores__
+                0x00001e36                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001e34        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00001e34                _exit
-                0x00001e34                exit
+ .fini9         0x00001e36        0x0 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00001e36                _exit
+                0x00001e36                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -4069,11 +4072,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001e34        0x4 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00001e36        0x4 e:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00001e38                _etext = .
+                0x00001e3a                _etext = .
 
-.data           0x00800100       0x2c load address 0x00001e38
+.data           0x00800100       0x2c load address 0x00001e3a
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -4120,8 +4123,8 @@ END GROUP
  COMMON         0x008001ec       0x18 ws2812.o
                 0x008001ec                ws2812_fbuf
                 0x00800204                PROVIDE (__bss_end, .)
-                0x00001e38                __data_load_start = LOADADDR (.data)
-                0x00001e64                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00001e3a                __data_load_start = LOADADDR (.data)
+                0x00001e66                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800204        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
